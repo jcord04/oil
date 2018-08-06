@@ -15,6 +15,10 @@ export function isAdvancedSettings() {
   return getConfigValue(OIL_CONFIG.ATTR_ADVANCED_SETTINGS, false);
 }
 
+export function useCustomDefaultView() {
+  return getConfigValue(OIL_CONFIG.ATTR_USE_CUSTOM_DEFAULT_VIEW, false);
+}
+
 export function getTimeOutValue() {
   return getConfigValue(OIL_CONFIG.ATTR_TIMEOUT, defaultTimeoutInSeconds);
 }
