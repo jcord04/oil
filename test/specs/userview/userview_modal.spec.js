@@ -124,7 +124,7 @@ describe('the user view modal aka the oil layer wrapper', () => {
       spyOn(CoreConfig, 'gdprApplies').and.returnValue(false);
       spyOn(CoreUtils, 'sendEventToHostSite').and.callThrough();
 
-      renderOil({optIn: false, advancedSettings: true});
+      renderOil({optIn: false});
       expect(CoreUtils.sendEventToHostSite).not.toHaveBeenCalledWith(EVENT_NAME_OIL_SHOWN);
       done();
     });
